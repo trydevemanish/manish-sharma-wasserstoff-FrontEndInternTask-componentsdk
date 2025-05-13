@@ -39,6 +39,7 @@ Each component is designed to be flexible, reusable, and self-contained. Here's 
 | `Heading`     | Reusable heading with name feild |
 | `InputField`  | Text input field with inputfeildname, value and onChange |
 | `Coupon`      | Coupon component with with feild like fullname,email |
+| `Uploadimage` | A component that will render a upload image section only |
 
 ---
 ## 🖼️ Demo Pages
@@ -58,9 +59,11 @@ A server page where you will find your coupon
    git clone https://github.com/manish-sharma-wasserstoff-FrontEndInternTask-componentsdk
 
 2. **Install dependencies**
+    ```bash
     npm install
 
 3. **Start development server**
+    ```bash
     npm run dev
    
 4. **Open in browser**
