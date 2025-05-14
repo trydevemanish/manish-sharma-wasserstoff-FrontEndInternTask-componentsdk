@@ -5,7 +5,6 @@ import Image from 'next/image'
 type datatype = {
   fullname : string,
   email : string,
-  password? : string
 }
 
 export default function Coupon({fullname,email}:datatype) {

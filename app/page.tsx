@@ -4,7 +4,7 @@ import Heading from "@/components/Heading";
 import Inputfield from "@/components/Inputfield";
 import Uploadimage from "@/components/Uploadimage";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import React, { useState } from "react";
 import useDataStore from '@/utils/usestore'
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
   const[password,setPassword] = useState('')
   const router = useRouter()
 
-  async function handleformsubmit(event:any){
+  async function handleformsubmit(event:React.FormEvent<HTMLFormElement>){
     event.preventDefault()
 
     const Passingdata = {

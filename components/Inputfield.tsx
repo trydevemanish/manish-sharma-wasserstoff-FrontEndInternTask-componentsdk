@@ -1,5 +1,5 @@
 "use client"
-import React, { useState,useEffect, Dispatch, SetStateAction } from 'react'
+import React, { Dispatch, SetStateAction } from 'react'
 
 type props = {
   inputFieldName : string,

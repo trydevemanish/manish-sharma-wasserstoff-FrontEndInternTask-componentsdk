@@ -11,14 +11,14 @@ export default function Page() {
   return (
     <Background className='flex flex-col min-h-screen items-center justify-center'>
         <p className="text-base font-medium font-sans">Coding Casf</p>
-        <Heading name={data?.fullname} />
+        <Heading name={data?.fullname ? data?.fullname : 'Manish Sharma'} />
         <p className="pt-5 opacity-80 text-xs flex flex-col items-center tracking-widest">
             <span>We have emailed your ticket to</span>
             <span><span className='text-amber-600 px-2'>{data?.email ? data?.email : 'sample@gmail.com'}</span> and will keep update in</span>
             <span>the run up to the event.</span>
         </p>
         <div className='mt-7'>
-            <Coupon fullname={data?.fullname!} email={data?.email!} password={data?.password!} />
+            <Coupon fullname={data?.fullname} email={data?.email} />
         </div>
     </Background>
   )
